@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<style type="text/css">	
+input{
+	width: 50px;
+}
+input[type="text"]{
+	width: 207px;
+}
+*{
+	padding: 5px;
+	border-radius: 5px;
+	margin: 2px;
+}
+.container{
+	
+	text-align: center;
+	margin-top: 10%;
+}
+#form1{
+	display: inline-block;
+	border: 2px solid blue;
+	padding: 10px;
+}
+h2{
+	color: green;
+}
+</style>
+<body>
+	
+	<div class="container">
+		<h2>A Simple JavaScript Calculator</h2><br>
+	<form name="form1" id="form1">
+		<input type="text" name="result" style="text-align: right;"><br>
+		<input type="button" name="btn9" value="9" onclick="disp(btn9.value)">
+		<input type="button" name="btn8" value="8" onclick="disp(btn8.value)">
+		<input type="button" name="btn7" value="7" onclick="disp(btn7.value)">
+		<input type="button" name="btnadd" value="+"  onclick="disp(btnadd.value)"><br>
+		<input type="button" name="btn6" value="6" onclick="disp(btn6.value)">
+		<input type="button" name="btn5" value="5" onclick="disp(btn5.value)">
+		<input type="button" name="btn4" value="4" onclick="disp(btn4.value)">
+		<input type="button" name="btnSub" value="-" onclick="disp(btnSub.value)"><br>
+		<input type="button" name="btn3" value="3" onclick="disp(btn3.value)">
+		<input type="button" name="btn2" value="2" onclick="disp(btn2.value)">
+		<input type="button" name="btn1" value="1" onclick="disp(btn1.value)">
+		<input type="button" name="btnMult" value="*" onclick="disp(btnMult.value)"><br>
+		<input type="button" name="btn0" value="0" onclick="disp(btn0.value)">
+		<input type="button" name="btnCalc" value="=" onclick="result.value=eval(result.value)">
+		
+		<input type="button" name="btnClear" value="Clear" onclick="result.value=0">
+		<input type="button" name="btnDiv" value="/" onclick="disp(btnDiv.value)">
+	</form>
+	<p>A Simple Calculator by Hari Kishore</p>
+	</div>
+<script type="text/javascript">
+	function disp(num) {
+		form1.result.value += num;
+	}
+</script>
+</body>
+</html>

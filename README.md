@@ -1,7 +1,13 @@
+---
+description: This is docs for the project on GitBook.
+---
+
 # CalculatorJS
+
 A very Basic JavaScript Calculator
 
+![calc\_imag](.gitbook/assets/calc.png)
 
-<img src='calc.png' alt='calc_imag'>
+It uses built-in function 'eval' for computation.  
 
-It uses built-in function 'eval' for computation.<br>
+
